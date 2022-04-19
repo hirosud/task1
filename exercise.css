@@ -1,0 +1,97 @@
+/*リセットcss*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    height:50px;
+    background-color: #ff9a4b;
+}
+
+main{
+    width:960px;
+    margin:50px auto;
+    display: flex;
+}
+
+
+.flow{
+    width:300px;
+    margin-right:30px;
+    padding:10px;
+    position:relative;
+    background-color: #EEEEEE;
+}
+
+.flow:last-child{
+/*三つ目のflowに要素の外側余白を0にしている
+　一つ目二つ目には30pxの余白を設定しているが、最後はいらないので最後の子要素にmargin:0を設定している*/
+    margin-right:0;
+}
+
+.imagebox1{
+    height:150px;
+    background-image: url(image/flow01.png);
+    background-size:cover;
+    background-position: bottom;
+}
+
+.imagebox2{
+    height:150px;
+    background-image: url(image/flow02.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.imagebox3{
+    height:150px;
+    background-image: url(image/flow03.png);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.step{
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: #ff9a4b;
+    color:#fff;
+}
+
+.title{
+    margin:15px 0 5px;
+}
+
+footer{
+    height:50px;
+    background-color: #aaaaaa;
+}
+
+@media screen and (max-width:768px){
+    main{
+        width:100%;
+        margin:50px auto;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:768px){
+    .flow{
+        width:90%;
+        margin:0 auto;
+        padding: 10px;
+        margin-bottom:20px;
+        position:relative;
+        background-color: #EEEEEE;
+    }
+}
+
+@media screen and (max-width:768px){
+    .flow:last-child{
+        margin-bottom:50px;
+        margin:0 auto;
+    }
+}
+
